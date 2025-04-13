@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav{
+    background-image: url(../images/Brown\ Wood\ Minimalist\ Profile\ LinkedIn\ Banner.png);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    color: rgb(11, 11, 11);
+    
+}
+.Content h1{
+    color: rgb(29,19,102);
+    margin-left: 5px;
+    margin-bottom: 20%;
+    font-style: italic;
+    
+}
+ul,li,h1{
+    display: inline;
+    height: 50px;
+    width: 100%;
+    
+}
+ul a{
+    color: white;
+    margin-top: 10px;
+    font-style: italic;
+    
+
+}
+ul{
+    
+    margin-left:65%;
+    font-size:23px;
+}
+li{
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+a:hover{
+    color: rgb(15, 102, 111);
+}
+.Content{
+    font-size: 25px;
+    margin-left: 100px;
+
+    width: 900px;
+    height: 50px;
+    margin-top:10%;
+}
+.image-container {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 4s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.image{
+    margin-top:50px;
+    display:flex;
+    right: 100px;
+    position: absolute;
+
+}
+.image img{
+    border-radius: 50%;
+    box-shadow:  5px 5px 10px black;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-right: 50px;
+    margin-top: 30%;
+}
+.icons{
+    font-size: 30px;
+    display: flex;
+    margin-top: 20%;
+    align-items: center;
+    margin-left: 30%;
+    gap: 20px;
+}
+.icons a{
+    color: rgb(29, 19, 102);
+}

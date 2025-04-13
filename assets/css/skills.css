@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+.nav{
+    background-image: url(../images/resized_skills_image.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.images ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    width: 60%;
+    height: 60%;
+    bottom: 60%;
+    margin: auto;
+}
+.images li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.images img{
+    width: 170px;
+    height: 170px;
+    border-radius: 20%;
+    box-shadow: 10px 10px 10px rgba(20, 7, 114, 0.5);
+    transition: 0.4s;
+    background: rgba(255,255,255,0.1);
+}
+
+
+
+ul,li{
+    display: inline;
+}
+ul a{
+    color:white;
+    font-style: italic;
+}
+ul{
+    margin-left:65%;
+    font-size: 23px;
+}
+li{
+    margin-left: 10px;
+    cursor: pointer;
+}
+a:hover{
+    color: rgb(15,102,111);
+}
+.image-container {
+    width: 100%; 
+    opacity: 0; 
+    transform: translateY(-200px); 
+    animation: slideInTop 1.5s ease-out forwards;
+}
+
+@keyframes slideInTop {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.icons{
+    font-size: 30px;
+    display: flex;
+    margin-bottom: 40%;
+    align-items: center;
+    margin-left: 45%;
+    gap: 20px;
+}
+.icons a{
+    color: rgb(29, 19, 102);
+}
